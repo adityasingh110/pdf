@@ -1,0 +1,16 @@
+import java.util.Scanner;
+  public class Eggs
+  {
+   public static void main(String...args)
+   {
+     Scanner in = new Scanner(System.in);
+      int a = in.nextInt();
+    System.out.println("you ordered "  +a+ " eggs");
+       int b = a/12;
+       int c = a%12;
+    double d = b*56.3;
+    double e = c*9.7;
+    double f = d+e;
+  System.out.printf("that's " +b+ " dozen at Rs."+d+ " per dozen and " +c+ " loose eggs at "+e+ " each and for a total of " +f );
+   }
+ }

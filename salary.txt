@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class Emp{
+	void overTimePay(int hourlyPerRate, int regularHourRate,int overtimeHourRate )
+	{
+		
+		
+		int x= (int) (1.5* hourlyPerRate);
+		int y=regularHourRate+overtimeHourRate*x;
+		System.out.println("OverTime Pay="+y);
+		
+	}
+	
+}
+
+public class Salary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter hourly rate");
+		int hourlyPerRate=sc.nextInt();
+		System.out.println("Enter Regular Hour Rate");
+		int regularHourRate= sc.nextInt();
+		System.out.println("Enter Overtime Hour Rate");
+		int overtimeHourRate=sc.nextInt();
+		
+		Emp e1=new Emp();
+
+		e1.overTimePay(hourlyPerRate,regularHourRate,overtimeHourRate);
+	}
+
+}
